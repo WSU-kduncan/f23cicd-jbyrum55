@@ -29,11 +29,11 @@
 ## Running the Container
 - Used the command `docker run -p 8080:80 -d nginximage` to start a new container.
 - Mapped port 8080 on the host to port 80 on the container.
-- Used `-d` to run the container detached.
+- Used `-d` to run the container detached, so you can still have a functioning terminal.
 - Then the last part is the image name.
 
 ## Viewing the Project
-- Ran the command `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 3a001d0742ea0e0b6fbed1b16e4bc688cf73f1de9758d589717ff33d3d46e7b5` to get the container's IP address (172.17.0.2).
+- Ran the command `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 029e48701823069a64d81e5cae47ee54f559d61320bb7b129c157118f0857bad` to get the container's IP address (172.17.0.2).
 - Then you can go to your browser and search the ip with :8080 on the end
 - Or you can use http://localhost:8080 which is what I chose to do.
 
