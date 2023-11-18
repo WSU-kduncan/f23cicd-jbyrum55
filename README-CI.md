@@ -23,7 +23,7 @@
 ## Creating Dockerfile
 - Used Docker Desktop to search for different images, I chose Nginx.
 - Followed the instructions on Nginx's main page for the Dockerfile.
-- Dockerfile included using the latest version of Nginx, setting the working directory, specifying the path to website files, exposing the port, and running Nginx server commands.
+- Dockerfile included using the latest version of Nginx, setting the working directory, specifying the path to website files, exposing the port, and running Nginx server commands. I also had to add a command to rename my index file becuase I am using a site I made in another class.
 - Built the Dockerfile using the command `docker build -t nginximage` or a chosen name.
 
 ## Running the Container
