@@ -4,6 +4,9 @@ FROM nginx:latest
 # Set the working directory to /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 
+# Remove the default Nginx welcome page
+RUN rm -rf /usr/share/nginx/html/*
+
 # Copy your website files into the container
 COPY website/MyWebsite/ /usr/share/nginx/html/
 
