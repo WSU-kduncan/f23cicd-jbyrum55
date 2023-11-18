@@ -5,7 +5,7 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 
 # Copy your website files into the container
-COPY website/MyWebsite/ .
+COPY website/MyWebsite/aboutme.html .
 
 # Expose port 80 to the outside world
 EXPOSE 80
