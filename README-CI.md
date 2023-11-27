@@ -47,8 +47,28 @@
 - Then you will be prompted for a username and password. For your password, you can use a token or your password. I used my Docker account username and password. May look something like `docker login -u jasonl5550 -p Mypass`.
 
 ## Push Container Image to DockerHub
-- You first have to build the image using a command like this `docker build -t jasonl5550/ceg3120-byrum:tag .`.
-- Next, you can tag your image with a command like this `docker tag jasonl5550/ceg3120-byrum:tag jasonl5550/ceg3120:tag`
+- You first have to build the image using a command like this `docker build -t jasonl5550/image-name:tag .`.
+- Next, you can tag your image with a command like this `docker tag jasonl5550/image-name:tag jasonl5550/ceg3120:tag`
 - Then you need to push your image `docker push jasonl5550/ceg3120-byrum:tag`.
 
+## MY Repository
+- https://hub.docker.com/repository/docker/jasonl5550/ceg3120-byrum/general
+
 ## GitHub Secrets
+- Secrets are you to store personal information such as usernames, passwords, or keys.
+- To set a secret you have to login to GitHub and go to your repository, then go to the repo settings tab. Next, click on secrets and click New Repository secret.
+- For this project, we have to set our DockerHub username and password. They are titled DOCKER_USERNAME and DOCKER_PASSWORD.
+
+## Workflow Behavior
+- GitHub workflow is used for pushing a Docker image to DockerHub through a coded process. This push occurs every time something is pushed to the main branch.
+- The steps in the workflow are:
+  - Checkout Repository- checks source code for steps
+  - Set up QEMU- If used on cross-platforms
+  - Set up Docker Buildx- extensions for multi-platform images
+  - Login to DockerHub- Used to check username and password
+  - Build and Push Image- Creates image, tags image, pushes image.
+ 
+- Custom Variables
+  - Branch Name- normally main but may change
+  - DockerHub Repo Name- Name changes
+  - DockerHub Secrets Username and Password- May change  
