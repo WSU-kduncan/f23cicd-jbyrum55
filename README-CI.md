@@ -1,4 +1,4 @@
-# CI Project Overview
+# CI Project Overview Part 1
 
 ## What We're Doing
 - In this project, we are using Continuous Integration (CI) to build and test a website.
@@ -37,3 +37,18 @@
 - Then you can go to your browser and search the ip with :8080 on the end
 - Or you can use http://localhost:8080 which is what I chose to do.
 
+# CI Project Part 2
+
+## How to Create a Public DockerHub Repo
+- To create a Public Repo you first have to create a DockerHub, then log in, then go to the Repositories tab and click the Create Repo button. Next, you will have to fill out some information such as a name, public or private, and a description.
+
+## Authenticate with DockerHub via CLI
+- After you create a repository, you can use the 'docker login' command.
+- Then you will be prompted for a username and password. For your password, you can use a token or your password. I used my Docker account username and password. May look something like 'docker login -u jasonl5550 -p Mypass'.
+
+## Push Container Image to DockerHub
+- You first have to build the image using a command like this 'docker build -t jasonl5550/ceg3120-byrum:tag .'.
+- Next, you can tag your image with a command like this 'docker tag jasonl5550/ceg3120-byrum:tag jasonl5550/ceg3120:tag'
+- Then you need to push your image 'docker push jasonl5550/ceg3120-byrum:tag'.
+
+## GitHub Secrets
