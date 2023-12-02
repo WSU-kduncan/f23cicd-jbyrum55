@@ -13,6 +13,9 @@
 - Nginx
 - Local Git Repo
 
+## Diagram of CI Workflow 
+<img width="547" alt="Screenshot 2023-12-01 at 10 05 25 PM" src="https://github.com/WSU-kduncan/f23cicd-jbyrum55/assets/122378214/f4d98b2f-a054-415c-9f1e-e1ae80efa491">
+
 # Running Locally
 
 ## Installing Docker
