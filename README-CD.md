@@ -20,6 +20,6 @@ This CD process is important because it automates the tasks which saves the user
 
 A GitHub Action is triggered when you push a tag. The workflow generates tags for the Docker Image based on the repositories metadata. Next, it pushes the Docker image to DockerHub with the new tag. It does this to make sure that the Docker images are versioned in sync with our Git tags.
 
-#Docker Link
+# Docker Link
 
 https://hub.docker.com/repository/docker/jasonl5550/ceg3120-byrum/general
