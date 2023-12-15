@@ -1,0 +1,10 @@
+
+# Set the path to your Docker container name
+CONTAINER_NAME="your_container_name"
+
+# Check if the Docker container is running
+if ! docker inspect -f '{{.State.Running}}' "$CONTAINER_NAME" &> /dev/null; then
+    # Container is not running, attempt to start it
+    docker start "$CONTAINER_NAME"
+    echo "Container $CONTAINER_NAME restarted at $(date)"
+fi
