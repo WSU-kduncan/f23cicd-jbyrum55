@@ -1,6 +1,8 @@
 # CD Project Overview
 This Continuous Deployment projects goal is to automate the tagging and deployment process for a Docker app using GitHub actions.
 
+# <img width="752" alt="Screenshot 2023-12-15 at 3 07 33 PM" src="https://github.com/WSU-kduncan/f23cicd-jbyrum55/assets/122378214/258fe0e2-f2aa-40c2-8f00-3719fe3f7cf7">
+
 # Why
 This CD process is important because it automates the tasks which saves the user time, is way more reliable, and is more efficient.
 
